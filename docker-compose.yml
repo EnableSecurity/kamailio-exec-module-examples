@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  kamailio-vulnerable:
+    image: ghcr.io/enablesecurity/kamailio-exec-module-examples/kamailio:5.6.3
+    build:
+      context: .
+    network_mode: "host"
+    volumes:
+      - ./configs/vuln-exec/:/usr/local/etc/kamailio/
+
+  kamailio-protected:
+    image: ghcr.io/enablesecurity/kamailio-exec-module-examples/kamailio:5.6.3
+    build:
+      context: .
+    network_mode: "host"
+    volumes:
+      - ./configs/protected-exec/:/usr/local/etc/kamailio/
+
